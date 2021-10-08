@@ -29,7 +29,6 @@ $(document).ready(function() {
     const times = day.split("-");
     const assembledDate = times[1] + ", " + times[2] + ", " + times[0];
     const date = new Date(assembledDate);
-    console.log(date);
     const dayIndicator = date.getDay();
     output.append(dayConverter(dayIndicator));
   });
